@@ -5,6 +5,7 @@ using UnityEngine;
 public class BlocoSpawner : MonoBehaviour
 {
   public GameObject Bloco;
+  //blocoAzul, etc...
   GameManager gm;
   Bloco bloco; //?
 
@@ -25,7 +26,7 @@ public class BlocoSpawner : MonoBehaviour
           for(int i = 0; i < 11; i++)
           {
               for(int j = 0; j < 4; j++){
-                  Vector3 posicao = new Vector3(-7.9f + 1.58f * i, 4 - 0.55f * j);
+                  Vector3 posicao = new Vector3(-7.9f + 1.58f * i, 3.8f - 0.55f * j);
 
                   Instantiate(Bloco, posicao, Quaternion.identity, transform);
   
