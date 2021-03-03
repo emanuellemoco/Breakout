@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 644998772542460019}
   - component: {fileID: 8749995454255360928}
   m_Layer: 0
-  m_Name: tijolo-verde 1
+  m_Name: tijolo-verde
   m_TagString: Tijolo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bdab82b27ad1eb4ebc9b102b1f02be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaTijolo: 0
+  forcaTijolo: 1
+  tipo: 0
   inteiro: {fileID: 8989007880435372523}
   quebrado: {fileID: 6878942151722439746}
 --- !u!61 &8749995454255360928
@@ -226,7 +227,7 @@ SpriteRenderer:
   m_SortingLayerID: -175833405
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ebc546763a8f6d148a44723740a4a886, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd971c5ce9fb62a4aab7933ad884beff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

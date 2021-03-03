@@ -30,7 +30,6 @@ public class SoundManagerScript : MonoBehaviour
             switch(clip){
             case "hit":
                 audioSrc.PlayOneShot (hitSound);
-                Debug.Log(hitSound);
                 break;
             case "jump":
                 audioSrc.PlayOneShot (jumpSound);

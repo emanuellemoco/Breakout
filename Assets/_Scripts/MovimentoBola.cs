@@ -27,6 +27,8 @@ public class MovimentoBola : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (gm.gameState == GameManager.GameState.MENU) Reset();
+
         if (gm.gameState != GameManager.GameState.GAME) return;
         
         transform.position += direcao * Time.deltaTime * velocidade;
@@ -63,7 +65,7 @@ public class MovimentoBola : MonoBehaviour
        
         if(gm.vidas <= 0 && gm.gameState == GameManager.GameState.GAME)
         {
-        gm.ChangeState(GameManager.GameState.ENDGAME);
+            gm.ChangeState(GameManager.GameState.ENDGAME);
         } 
    }
 

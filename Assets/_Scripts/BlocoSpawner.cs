@@ -6,19 +6,20 @@ public class BlocoSpawner : MonoBehaviour
 {
   public GameObject BlocoRoxo, BlocoVerde;
   GameManager gm;
-  Bloco bloco; //?
+  Bloco bl; 
 
   void Start()
   {
       gm = GameManager.GetInstance();
+    //   bl = Bloco.Start();
+      //bl = Bloco
       GameManager.changeStateDelegate += Construir;
       Construir();
   }
 
   void Construir()
-  {
-      
-       if (gm.gameState == GameManager.GameState.GAME)
+  {    
+       if (gm.gameState == GameManager.GameState.GAME && gm.lastState == GameManager.GameState.MENU)
       {
           foreach (Transform child in transform) {
               GameObject.Destroy(child.gameObject);
@@ -30,9 +31,11 @@ public class BlocoSpawner : MonoBehaviour
                 int x = Random.Range(0,2);
                 if(x == 0){
                     Instantiate(BlocoRoxo, posicao, Quaternion.identity, transform);
+                    // bl.forcaTijolo=2; 
                 }
                 if(x == 1) { 
                     Instantiate(BlocoVerde, posicao, Quaternion.identity, transform);
+                    // forcaTijolo=1; 
                 }
                   
   

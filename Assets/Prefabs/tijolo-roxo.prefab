@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bdab82b27ad1eb4ebc9b102b1f02be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaTijolo: 0
+  forcaTijolo: 2
+  tipo: 0
   inteiro: {fileID: 7237284123608166361}
   quebrado: {fileID: 8736091747025074914}
 --- !u!61 &8551776367905379323

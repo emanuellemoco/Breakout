@@ -8,6 +8,7 @@ public class GameManager
    public enum GameState { MENU, GAME, PAUSE, ENDGAME };
 
    public GameState gameState { get; private set; }
+   public GameState lastState { get; private set; }
    public int vidas;
    public int pontos;
    
@@ -31,11 +32,13 @@ public class GameManager
        vidas = 3;
        pontos = 0;
        gameState = GameState.MENU;
+       lastState = GameState.MENU;
    }
    
    public void ChangeState(GameState nextState)
     {
-    if (nextState == GameState.GAME) Reset();
+    if (nextState == GameState.GAME && gameState == GameState.MENU)  Reset();
+        lastState = gameState;
         gameState = nextState;
         changeStateDelegate();
     }
