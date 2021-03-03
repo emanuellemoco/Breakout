@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class BlocoSpawner : MonoBehaviour
 {
-  public GameObject BlocoRoxo, BlocoVerde;
+  public GameObject BlocoRoxo, BlocoVerde, BlocoPreto;
   GameManager gm;
   Bloco bl; 
 
   void Start()
   {
       gm = GameManager.GetInstance();
-    //   bl = Bloco.Start();
-      //bl = Bloco
       GameManager.changeStateDelegate += Construir;
       Construir();
   }
@@ -28,14 +26,17 @@ public class BlocoSpawner : MonoBehaviour
           {
               for(int j = 0; j < 4; j++){
                   Vector3 posicao = new Vector3(-8f + 2f * i, 4f - 1f * j);
+                int y = Random.Range(0,14);
                 int x = Random.Range(0,2);
+                if (y == 3){
+                    Instantiate(BlocoPreto, posicao, Quaternion.identity, transform);
+                }
+                else
                 if(x == 0){
                     Instantiate(BlocoRoxo, posicao, Quaternion.identity, transform);
-                    // bl.forcaTijolo=2; 
                 }
                 if(x == 1) { 
                     Instantiate(BlocoVerde, posicao, Quaternion.identity, transform);
-                    // forcaTijolo=1; 
                 }
                   
   

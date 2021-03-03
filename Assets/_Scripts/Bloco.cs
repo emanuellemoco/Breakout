@@ -14,8 +14,8 @@ public class Bloco : MonoBehaviour
 
         gm = GameManager.GetInstance();   
         int x = Random.Range(0,3);
-        quebrado.GetComponent<SpriteRenderer>().enabled = false;
         inteiro.GetComponent<SpriteRenderer>().enabled = true;
+        quebrado.GetComponent<SpriteRenderer>().enabled = false;
        
     }
     
