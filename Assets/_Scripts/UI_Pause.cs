@@ -14,7 +14,6 @@ public class UI_Pause : MonoBehaviour
  
   public void Retornar()
   {
-      //arrumar aqui
       gm.ChangeState(GameManager.GameState.GAME);
   }
 

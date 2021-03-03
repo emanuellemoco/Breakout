@@ -2071,7 +2071,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14712b38e4fdad940bbbb06736c5cc58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bloco: {fileID: 2806316334449718904, guid: 25dad86ba26e80c4293c8d91434e2ca2, type: 3}
+  BlocoRoxo: {fileID: 2806316334449718904, guid: 25dad86ba26e80c4293c8d91434e2ca2,
+    type: 3}
+  BlocoVerde: {fileID: 5799088031296396005, guid: df0f493dfbbd04c4c9bf0e54e6d9aa4e,
+    type: 3}
 --- !u!4 &1316114514
 Transform:
   m_ObjectHideFlags: 0

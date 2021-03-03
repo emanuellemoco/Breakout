@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BlocoSpawner : MonoBehaviour
 {
-  public GameObject Bloco;
+  public GameObject BlocoRoxo, BlocoVerde;
   GameManager gm;
   Bloco bloco; //?
 
@@ -17,6 +17,7 @@ public class BlocoSpawner : MonoBehaviour
 
   void Construir()
   {
+      
        if (gm.gameState == GameManager.GameState.GAME)
       {
           foreach (Transform child in transform) {
@@ -26,8 +27,14 @@ public class BlocoSpawner : MonoBehaviour
           {
               for(int j = 0; j < 4; j++){
                   Vector3 posicao = new Vector3(-8f + 2f * i, 4f - 1f * j);
-
-                  Instantiate(Bloco, posicao, Quaternion.identity, transform);
+                int x = Random.Range(0,2);
+                if(x == 0){
+                    Instantiate(BlocoRoxo, posicao, Quaternion.identity, transform);
+                }
+                if(x == 1) { 
+                    Instantiate(BlocoVerde, posicao, Quaternion.identity, transform);
+                }
+                  
   
               }
           }

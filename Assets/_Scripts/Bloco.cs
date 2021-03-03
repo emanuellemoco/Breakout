@@ -19,7 +19,6 @@ public class Bloco : MonoBehaviour
         int x = Random.Range(0,3);
         quebrado.GetComponent<SpriteRenderer>().enabled = false;
         inteiro.GetComponent<SpriteRenderer>().enabled = true;
-        Debug.Log("AAA");
 
         if (x == 0){
             // GetComponent<SpriteRenderer>().color = newColor1;
