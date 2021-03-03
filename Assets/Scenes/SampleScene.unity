@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1efc0326d74f31f45aa82e3d1d898d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: {fileID: 0}
+  message: {fileID: 818633438}
 --- !u!114 &62123509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1502,7 +1502,7 @@ GameObject:
   - component: {fileID: 818633438}
   - component: {fileID: 818633437}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text_endgame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2074,6 +2074,8 @@ MonoBehaviour:
   BlocoRoxo: {fileID: 2806316334449718904, guid: 25dad86ba26e80c4293c8d91434e2ca2,
     type: 3}
   BlocoVerde: {fileID: 5799088031296396005, guid: df0f493dfbbd04c4c9bf0e54e6d9aa4e,
+    type: 3}
+  BlocoPreto: {fileID: 6101353004638058588, guid: fa9993627c324a349bb0e6f083466f44,
     type: 3}
 --- !u!4 &1316114514
 Transform:
